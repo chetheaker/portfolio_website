@@ -224,8 +224,15 @@ nav a.border:active {
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 
-#about .content {
-  margin-top: 2rem;
+#about {
+  position: relative;
+  top: -50px;
+}
+
+@media only screen and (max-width: 400px) {
+  #about {
+    top: 0px;
+  }
 }
 
 #about h2 {
@@ -234,8 +241,31 @@ nav a.border:active {
   margin-bottom: 1rem;
 }
 
-#about hr {
-  width: 20%;
-  margin-left: 40%;
-  border: solid 2px #2b7a78;
+#about .bubble {
+  border: solid 5px #3aafa9;
+  border-radius: 1rem;
+  background-color: #3aafa9;
+}
+
+#about .one {
+  width: 5%;
+  height: 5px;
+  margin: 1rem 47.5%;
+}
+
+#about .two {
+  width: 10%;
+  height: 5px;
+  margin: 1rem 45%;
+}
+
+#about .three {
+  margin: 1rem 20%;
+}
+
+#about p {
+  margin: 1.5rem 8%;
+  font-weight: bold;
+  color: #feffff;
+  text-align: justify;
 }
