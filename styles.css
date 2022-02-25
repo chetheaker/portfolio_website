@@ -2,3 +2,190 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "montserrat", monospace, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  background-color: #3aafa9;
+  position: fixed;
+  z-index: 1;
+}
+
+header img {
+  max-height: 90px;
+  margin: 0 1rem;
+}
+
+nav {
+  margin: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.2rem 2rem;
+  margin: 0 1rem;
+  color: #feffff;
+  font-weight: bold;
+}
+
+nav a.border {
+  border: solid 3px #feffff;
+  background-color: #feffff;
+  color: #3aafa9;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px #2b7a78;
+}
+
+nav a.border:hover {
+  background-color: #2b7a78;
+  color: #feffff;
+  border: solid 3px #2b7a78;
+  box-shadow: 3px 3px #feffff;
+}
+
+nav a.border:active {
+  background-color: #feffff;
+  color: #3aafa9;
+  border: solid 3px #feffff;
+  box-shadow: 3px 3px #2b7a78;
+}
+
+@media only screen and (max-width: 980px) {
+  nav a {
+    padding: 0.2rem 1rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  /* change to sidebar nav pullout */
+}
+
+#hero {
+  background-image: url("images/hero_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(30%);
+  opacity: 0.8;
+  position: relative;
+  top: 100px;
+  height: 670px;
+  color: #feffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Take out triangle at the bottom of the image in #hero */
+
+#hero h2 {
+  font-weight: normal;
+  font-size: 3rem;
+  margin: 5px 0;
+  text-shadow: 2px 2px #3aafa9;
+}
+
+#hero hr {
+  width: 28%;
+  border: solid 2px #feffff;
+  box-shadow: -30px 0 #3aafa9;
+  margin-left: 30px;
+}
+
+#hero h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #3aafa9;
+  text-shadow: 3px 3px #feffff;
+  margin-bottom: 0.5rem;
+}
+
+#hero h1.mobile {
+  display: none;
+}
+
+#hero h1:hover {
+  text-shadow: 3px 3px 5px #feffff;
+}
+
+#hero .button {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+#hero a {
+  color: #feffff;
+  font-size: 3rem;
+  text-decoration: none;
+  text-align: center;
+  border: solid 5px #feffff;
+  border-radius: 1rem;
+  padding: 0 3rem;
+  box-shadow: 5px 5px #def2f1;
+  font-weight: bold;
+}
+
+#hero a:hover {
+  background-color: #3aafa9;
+  border: solid 5px #3aafa9;
+}
+
+#hero a:active {
+  background-color: #2b7a78;
+  border: solid 5px #2b7a78;
+}
+
+@media only screen and (max-width: 950px) {
+  #hero h2 {
+    font-size: 2rem;
+    text-shadow: 1.3px 1.3px #3aafa9;
+  }
+  #hero h1 {
+    font-size: 3.33rem;
+    text-shadow: 2px 2px #feffff;
+  }
+  #hero h1:hover {
+    text-shadow: 2px 2px 3px #feffff;
+  }
+  #hero a {
+    font-size: 2rem;
+    border: solid 3px #feffff;
+    box-shadow: 3px 3px #def2f1;
+  }
+  #hero a:hover {
+    border: solid 3px #3aafa9;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #hero h1 {
+    display: none;
+  }
+  #hero h1.mobile {
+    display: block;
+  }
+}
+
+#about .content {
+  margin-top: 2rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#about hr {
+  width: 20%;
+  margin-left: 40%;
+}
