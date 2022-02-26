@@ -239,12 +239,14 @@ nav a.border:active {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
+  color: #2b7a78;
 }
 
 #about .bubble {
   border: solid 5px #3aafa9;
   border-radius: 1rem;
   background-color: #3aafa9;
+  box-shadow: 10px 10px #2b7a78;
 }
 
 #about .one {
@@ -263,9 +265,135 @@ nav a.border:active {
   margin: 1rem 20%;
 }
 
-#about p {
+#about .content p {
   margin: 1.5rem 8%;
   font-weight: bold;
   color: #feffff;
   text-align: justify;
+}
+
+@media only screen and (max-width: 715px) {
+  #about .bubble {
+    box-shadow: 7px 7px #2b7a78;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about .bubble {
+    box-shadow: 5px 5px #2b7a78;
+  }
+
+  #about .three {
+    margin: 1rem 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #about .three {
+    margin: 1rem 5%;
+  }
+}
+
+#about .events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#about .event {
+  width: 300px;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  border: solid 5px #def2f1;
+  border-radius: 1rem;
+  background-color: #def2f1;
+  box-shadow: 10px 10px #2b7a78;
+}
+
+#about .event:hover {
+  box-shadow: 10px 10px 10px #2b7a78;
+}
+
+#about .event h4 {
+  font-weight: normal;
+  color: #2b7a78;
+  font-size: 1.2rem;
+}
+
+#about .event h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #2b7a78;
+}
+
+#about .event hr {
+  border: solid 2px #2b7a78;
+  border-radius: 1rem;
+  width: 30%;
+  margin: 0.65rem 0;
+}
+
+#about .event p {
+  text-align: justify;
+}
+
+#resume .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .event a {
+  border: solid 5px #2b7a78;
+  border-radius: 1rem;
+  background-color: #2b7a78;
+  padding: 0.5rem 1.5rem;
+  margin-top: 3.5rem;
+  text-decoration: none;
+  color: #feffff;
+}
+
+#about .event a:hover {
+  box-shadow: 0 0 10px #2b7a78;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: white;
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
+  }
+}
+
+#about .event a::after {
+  content: " .";
+  animation: dots 1.5s steps(5, end) infinite;
+  color: #feffff;
+}
+
+@media only screen and (max-width: 750px) {
+  #about .event {
+    margin: 1rem;
+  }
+  #about .content .three {
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #about .event {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about .event {
+    width: 72%;
+  }
 }
