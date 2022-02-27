@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "montserrat", monospace, sans-serif;
+  font-family: "source code pro", monospace;
 }
 
 header {
@@ -433,6 +433,7 @@ nav a.border:active {
 
 #projects {
   background-color: #def2f1;
+  padding-bottom: 2rem;
 }
 
 #projects h2 {
@@ -443,9 +444,9 @@ nav a.border:active {
   top: -50px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #projects h2 {
-    top: 0px;
+    padding-top: 30px;
   }
 }
 
@@ -496,6 +497,12 @@ nav a.border:active {
   border-radius: 1rem;
   background-color: #feffff;
   box-shadow: 10px 10px #2b7a78;
+}
+
+@media only screen and (min-width: 1200px) {
+  #projects .project:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media only screen and (max-width: 555px) {
@@ -578,6 +585,22 @@ nav a.border:active {
   background-color: #def2f1;
 }
 
+@media only screen and (max-width: 750px) {
+  #projects .popup {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #projects .popup {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+}
+
 #projects .popup-header {
   display: flex;
   justify-content: space-between;
@@ -611,8 +634,76 @@ nav a.border:active {
   padding: 0 1rem;
 }
 
-/* 
+#triangle-container {
+  background-color: #def2f1;
+}
 
-2. do popup for all projects
-3. possibly add the scale to the projects when hovered over?
+#triangle-3 {
+  background-color: #3aafa9;
+  height: 100px;
+  width: 100%;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  position: relative;
+  top: 1px;
+}
+
+#skills {
+  background-color: #3aafa9;
+}
+
+#skills .header h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #feffff;
+  margin-bottom: 2rem;
+}
+
+#skills .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  right: 5%;
+}
+
+#skills .skill {
+  margin-bottom: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  width: 200px;
+}
+
+#skills .skill h3 {
+  font-size: 2rem;
+  color: #feffff;
+}
+
+#skills .progress {
+  box-sizing: content-box;
+  height: 15px;
+  position: relative;
+  background: #2b7a78;
+  border-radius: 0.5rem;
+  padding: 4px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+#skills .progress > span {
+  display: block;
+  height: 100%;
+  border-radius: 5px 3px 3px 5px;
+  background-color: #def2f1;
+}
+
+/*
+complete contact page
+1. create forms
+2. error checking with javascript
+footer
+1. do footer
+review
+1. see codecademy list and requirements
 */
