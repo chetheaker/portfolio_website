@@ -489,13 +489,19 @@ nav a.border:active {
 }
 
 #projects .project {
-  width: 19%;
+  max-width: 320px;
   padding: 1rem;
   border: solid 5px #feffff;
-  margin-bottom: 2rem;
+  margin: 0 10px 2rem 10px;
   border-radius: 1rem;
   background-color: #feffff;
   box-shadow: 10px 10px #2b7a78;
+}
+
+@media only screen and (max-width: 555px) {
+  #projects .project {
+    width: 65%;
+  }
 }
 
 #projects .project h4 {
@@ -520,8 +526,7 @@ nav a.border:active {
 #projects .project .image {
   border: solid 1px #2b7a78;
   text-align: center;
-  width: 19vw;
-  height: 19vw;
+  height: 150px;
 }
 
 #projects .button-container {
@@ -561,10 +566,53 @@ nav a.border:active {
 
 #projects .popup {
   display: none;
-  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  width: 60%;
   height: 60%;
+  left: 20%;
+  top: 20%;
   border: solid 5px #3aafa9;
   border-radius: 1rem;
   background-color: #def2f1;
-  z-index: 2;
 }
+
+#projects .popup-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#projects .popup-header h4 {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+#projects .popup-header h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+#projects .close {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#projects .popup-header hr {
+  border: solid 3px #2b7a78;
+  border-radius: 1rem;
+  width: 55%;
+  margin: 0.65rem 0;
+}
+
+#projects .popup-content {
+  padding: 0 1rem;
+}
+
+/* 
+
+2. do popup for all projects
+3. possibly add the scale to the projects when hovered over?
+*/
