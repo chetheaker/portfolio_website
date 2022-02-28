@@ -17,7 +17,7 @@
   <body>
     <nav id="sidebar">
       <span class="close" onclick="closeNav()">&times;</span>
-      <div class="links">
+      <div class="links" onclick="closeNav()">
         <a href="#about">about</a>
         <a href="#projects">projects</a>
         <a href="#skills">skills</a>
@@ -289,10 +289,33 @@
               <span style="width: 1%;"></span>
             </div>
           </div>
-
         </div>
       </section>
-      <section id="contact"></section>
+      <div class="triangle-container-2">
+        <div id="triangle-4"></div>
+      </div>
+      <section id="contact">
+        <div class="header">
+          <h2>contact me.</h2>
+        </div>
+        <div class="form-container">
+          <form action="index.html" method="POST">
+            <label for="name">your name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">your email:</label>
+            <br>
+            <input type="text" name="email" id="email" required>
+            <br>
+            <label for="message">your message:</label>
+            <br>
+            <textarea name="message" id="message" rows="5" cols="30" required></textarea>
+            <br>
+            <input id="submit" type="submit" value="send">
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
