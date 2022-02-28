@@ -753,6 +753,7 @@ nav a.border:active {
 
 #contact {
   background-color: #def2f1;
+  padding-bottom: 2rem;
 }
 
 #contact .header h2 {
@@ -828,11 +829,20 @@ nav a.border:active {
   }
 }
 
+footer {
+  height: 50px;
+  background-color: #3aafa9;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  font-weight: bold;
+  color: #feffff;
+  margin-left: 30px;
+}
+
 /*
-
-footer
-1. do footer
-
 review
 1. see codecademy list and requirements
 */
