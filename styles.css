@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "source code pro", monospace;
+  font-family: "jura", monospace;
 }
 
 header {
@@ -24,16 +24,44 @@ header img {
 }
 
 nav {
-  margin: 0 2rem;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #3aafa9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+nav .close {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 77px;
+  font-weight: bold;
+  color: #feffff;
+  cursor: pointer;
+}
+
+nav .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  height: 30%;
 }
 
 nav a {
+  position: relative;
   text-decoration: none;
   font-size: 1.5rem;
-  padding: 0.2rem 2rem;
-  margin: 0 1rem;
+  padding: 0.2rem 3rem 0rem 2rem;
   color: #feffff;
   font-weight: bold;
+  text-align: left;
 }
 
 nav a.border {
@@ -41,7 +69,11 @@ nav a.border {
   background-color: #feffff;
   color: #3aafa9;
   border-radius: 0.5rem;
+  padding: 0.2rem 2rem;
+  margin-left: 2rem;
   box-shadow: 3px 3px #2b7a78;
+  text-align: center;
+  width: 40%;
 }
 
 nav a.border:hover {
@@ -58,15 +90,17 @@ nav a.border:active {
   box-shadow: 3px 3px #2b7a78;
 }
 
-@media only screen and (max-width: 980px) {
-  nav a {
-    padding: 0.2rem 1rem;
-    margin: 0 0.5rem;
-  }
+.menu-button {
+  margin: 0 2rem;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 790px) {
-  /* change to sidebar nav pullout */
+.menu-button .line {
+  width: 40px;
+  height: 5px;
+  border-radius: 1rem;
+  background-color: #feffff;
+  margin: 5px 0;
 }
 
 #hero {
@@ -702,8 +736,10 @@ nav a.border:active {
 complete contact page
 1. create forms
 2. error checking with javascript
+
 footer
 1. do footer
+
 review
 1. see codecademy list and requirements
 */

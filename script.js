@@ -38,3 +38,15 @@ function projectFourPopUp() {
 function projectFourHide() {
     document.getElementById("project4").style.display = "none";
 }
+
+// function to open sidebar
+function openNav() {
+    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("sidebar").style.borderLeft = "solid 5px #def2f1";
+}
+
+// function to close sidebar
+function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("sidebar").style.borderLeft = "none";
+}

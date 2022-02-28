@@ -12,17 +12,25 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <header>
-      <img src="images/logo_white.png" alt="logo" />
-      <nav>
+    <nav id="sidebar">
+      <span class="close" onclick="closeNav()">&times;</span>
+      <div class="links">
         <a href="#about">about</a>
         <a href="#projects">projects</a>
         <a href="#skills">skills</a>
         <a href="#contact" class="border">contact</a>
-      </nav>
+      </div>
+    </nav>
+    <header>
+      <img src="images/logo_white.png" alt="logo" />
+      <div class="menu-button" onclick="openNav()">
+        <div class="line 1"></div>
+        <div class="line 2"></div>
+        <div class="line 3"></div>
+      </div>
     </header>
     <main>
       <!--Main hero banner-->
